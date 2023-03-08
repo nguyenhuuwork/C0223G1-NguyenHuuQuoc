@@ -1,0 +1,40 @@
+<!DOCTYPE html>r
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  inputvatly = prompt("Nhap diem mon vat ly");
+  inputhoa = prompt("Nhap diem mon Hoa");
+  inputsinh = prompt("Nhap diem mon Sinh");
+  let vatly = parseInt(inputvatly);
+  let hoa = parseInt(inputhoa);
+  let sinh = parseInt(inputsinh);
+  let tongtrungbinh3mon = vatly + hoa + sinh;
+  let diemtrungbinh3mon = (vatly + hoa + sinh)/3;
+  document.write("tong trung binh 3mon = " + tongtrungbinh3mon);
+  document.write('<br/>');
+  document.write("diem trung binh 3mon = " + diemtrungbinh3mon);
+</script>
+<script>
+    document.write('<br/>');
+    inputnhietdoC = prompt('Nhap nhiet do C');
+    let nhietdoC = parseInt(inputnhietdoC);
+    let nhietdoF = (160 + 9 * nhietdoC)/5;
+    document.write('Nhiet do F la = ' + nhietdoF);
+</script>
+<script>
+    document.write('<br/>');
+    inputbankinhR = prompt('Nhap ban kinh hinh tron');
+    let bankinhR = parseInt(inputbankinhR);
+    let Shinhtron = 3.14 * bankinhR *bankinhR;
+    let Chinhtron = 2 * bankinhR * 3.14;
+    document.write('Dien tich hinh tron = ' + Shinhtron);
+    document.write('<br/>');
+    document.write('Chu vi hinh tron =' + Chinhtron)
+</script>
+
+</body>
+</html>

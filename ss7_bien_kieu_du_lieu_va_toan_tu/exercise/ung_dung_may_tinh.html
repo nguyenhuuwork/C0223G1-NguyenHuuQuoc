@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<input type="text" ; id="nhap1"><input type="text" ; id="nhap2"><br><br>
+<table>
+    <tr>
+        <th><button type="button"; onclick="phepcong()">Addition(+)</button></th>
+        <th><button type="button"; onclick="pheptru()">Subtraction(-)</button></th>
+        <th><button type="button"; onclick="phepnhan()">Multiplication(x)</button></th>
+        <th><button type="button"; onclick="phepchia()">Division(/)</button></th>
+    </tr>
+</table>
+<p id="kq">Result</p>
+<script>
+function phepcong() {
+let cong1 = document.getElementById("nhap1").value*1;
+let cong2 = document.getElementById("nhap2").value*1;
+let Result = cong1 + cong2;
+document.write('Result = ' + Result)
+}
+function pheptru() {
+    let tru1 = document.getElementById('nhap1').value*1;
+    let tru2 = document.getElementById('nhap2').value*1;
+    let Result = tru1 - tru2;
+    document.write('Result = ' + Result);
+}
+function phepnhan() {
+    let nhan1 = document.getElementById('nhap1').value*1;
+    let nhan2 = document.getElementById('nhap2').value*1;
+    let Result = nhan1 * nhan2;
+    document.write('Result = ' + Result);
+}
+function phepchia() {
+    let chia1 = document.getElementById('nhap1')*1;
+    let chia2 = document.getElementById('nhap2')*1;
+    let Result = chia1 / chia2;
+    document.write('Result = ' + Result);
+}
+
+</script>
+</body>
+</html>
