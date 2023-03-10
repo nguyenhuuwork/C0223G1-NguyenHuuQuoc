@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nếu doanh thu dưới 50tr thì hoa hồng là 5%</p>
+<p>Nếu doanh thu từ 50tr đến 100tr thì hoa hồng là 7%</p>
+<p>Nếu doanh thu trên 100tr thì hoa hồng là 10%</p>
+
+<script>
+    // let doanhthu = prompt('Nhap doanh thu ')*1;
+    // if (doanhthu > 100000000) {
+    //     let hoahong = doanhthu * (10 / 100);
+    //     alert('Hoa Hong = ' + hoahong);
+    // }else if (doanhthu > 50000000) {
+    //     let hoahong = doanhthu*(7/100);
+    //     alert('Hoa Hong = ' + hoahong);
+    // }else {
+    //     let hoahong = doanhthu*(5/100);
+    //     alert('Hoa Hong = ' + hoahong);
+    // }
+    let doanhthu = prompt('Nhap doanh thu ') * 1;
+    let a = prompt('Nhap % hoa hong');
+    if (doanhthu > 100000000 && a > 10) {
+        alert("hoa hong la bang = " + doanhthu * (10 / 100));
+    } else if (doanhthu > 50000000 && a > 7) {
+        alert("hoa hong la bang = " + doanhthu * (7 / 100));
+    } else {
+        alert("hoa hong la bang = " + doanhthu * (5 / 100));
+    }
+</script>
+</body>
+</html>

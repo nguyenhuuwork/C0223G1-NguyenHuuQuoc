@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhap so a') * 1;
+    let b = prompt('Nhap so b') * 1;
+    let c = prompt('Nhap so c') * 1;
+    if (a == 0) {
+        alert('Đay là phuong trinh bac nhat');
+    } else {
+        alert('Day la phuong trinh bac hai');
+        let delta = b * b - 4 * a * c;
+        if (delta > 0) {
+            alert('Phuong trinh co 2 nghiem');
+            let x1 = (-b + math.sqrt(delta)) / 2 * a;
+            let x2 = (-b - math.sqrt(delta)) / 2 * a;
+            alert(x1, x2)
+        } else if (delta = 0) {
+            alert('Phuong trinh co nghiem kep')
+            x1 = x2 = -b / 2 * a;
+            alert(x1, x2);
+        } else {
+            alert('Phuong trinh vo nghiem');
+        }
+    }
+
+</script>
+</body>
+</html>

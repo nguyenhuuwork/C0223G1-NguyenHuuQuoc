@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dangnhap = prompt('Dang nhap tai khoan');
+    if (dangnhap == 'Admin') {
+        let matkhau = prompt('Nhap mat khau');
+        if (matkhau == 'The Master') {
+            alert('Welcome');
+        } else if (matkhau == 'null') {
+            alert('Canceled');
+        } else {
+            alert('Wrong Password');
+        }
+    } else if (dangnhap == 'null') {
+        alert('Canceld');
+    } else {
+        alert('i dont know');
+    }
+
+
+    // let dangnhap = prompt('Nhap tai khoan');
+    // if (dangnhap == 'Admin') {
+    //     alert('nhap mat khau');
+    //     let matkhau = prompt('Nhap mat khau');
+    //     if (matkhau == 'TheMaster') {
+    //         alert('Welcome');
+    //     } else if (matkhau=='null') {
+    //         alert('Canceled');
+    //     } else {
+    //         alert('Wrong Password');
+    //     }
+    // } else if (dangnhap=='null') {
+    //     alert('canceled');
+    // } else {
+    //     alert('i dont know');
+    // }
+</script>
+</body>
+</html>

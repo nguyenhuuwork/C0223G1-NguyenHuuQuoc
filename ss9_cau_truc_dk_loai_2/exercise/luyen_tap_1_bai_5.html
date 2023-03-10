@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let toan = prompt('nhap diem toan') * 1;
+    let ly = prompt('nhap diem ly')*1;
+    let hoa = prompt('nhap diem hoa')*1;
+    let dtb = (toan + ly + hoa)/3;
+    alert(dtb);
+    if (dtb >= 8) {
+        alert('Hoc sinh gioi');
+    } else if ( dtb>= 6.5) {
+        alert('Hoc sinh kha');
+    } else if ( dtb >= 5) {
+        alert('Hoc sinh trung binh');
+    } else {
+        alert('Hoc sinh yeu');
+    }
+</script>
+</body>
+</html>

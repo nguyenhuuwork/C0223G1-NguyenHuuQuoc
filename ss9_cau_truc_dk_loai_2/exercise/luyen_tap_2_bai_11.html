@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Thu nhập từ 0 đến 10tr thì phần trăm thuế là 5%</p>
+<p>Thu nhập từ 10 đến 50tr thì phần trăm thuế là 7%</p>
+<p>Thu nhập từ 50 đến 100tr thì phần trăm thuế là 8%</p>
+<p>Thu trên 100tr thì phần trăm thuế là 10%</p>
+<script>
+    let thunhap = prompt('nhap thu nhap') * 1;
+    if (thunhap < 10000000) {
+        let phithuethunhap = thunhap * 0.05;
+        alert(phithuethunhap);
+    } else if (thunhap < 50000000) {
+        phithuethunhap = thunhap * 0.07;
+        alert(phithuethunhap);
+    } else if (thunhap < 100000000) {
+        phithuethunhap = thunhap * 0.08;
+        alert(phithuethunhap);
+    } else {
+        phithuethunhap = thunhap * 0.1;
+        alert(phithuethunhap);
+    }
+</script>
+</body>
+</html>
