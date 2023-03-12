@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Title</title>
 </head>
 <body>
-<label><input type="number" id="tiengui" placeholder="nhap so tien gui">VND</label><br>
-<label><input type="number" id="thang" placeholder="so thang gui">so thang gui</label><br>
-<button type="button" id="xacnhan" onclick="tinhlainganhang()">xacnhan</button>
-<br>
+<label><input type="number" id="tienGui" placeholder="nhap sp tien gui">VND</label><br>
+<label><input type="number" id="thang" placeholder="so thang gui">So thang gui</label><br>
+<button type="button" id="xacNhan" onchange="tinhLaiNganHang()">xac nhan</button><br>
 <label id="tien"></label>
 <script>
-    function tinhlainganhang() {
-        let tiengui = document.getElementById("tiengui").value;
-        let thang = document.getElementById("thang").value;
-        let laixuat = 0.01;
-        let tien = tiengui * (1 + laixuat) * thang
-        document.getElementById("tien").innerHTML = "tong so tien:" + tien + "VNĐ"
-    }
+  function tinhLaiNganHang() {
+    let tienGui =document.getElementById('tienGui').value;
+    let thang =document.getElementById("thang").value;
+    let laiXuat =0.1;
+    let tien =tienGui*(1+laiXuat)*thang;
+    document.getElementById("tien").innerText = " tong so tien " + tien + "VND"
+  }
 </script>
 </body>
 </html>
