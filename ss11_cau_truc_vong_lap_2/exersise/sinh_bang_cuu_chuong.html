@@ -5,6 +5,23 @@
     <title>Title</title>
 </head>
 <body>
+<table border="1" width="300" cellspacing="0" cellpadding="3">
+</table>
+<script>
+    let sout;
+    sout = "<table border='1' width='300' cellingspacing='0' cellpadding='3'>"
+    let i = 1;
+    let j = 1;
+    for (i = 1; i <= 9; i++) {
+        sout = sout + "<tr>";
+        for (let j = 1; j <= 9; j++) {
+            sout = sout + "<td>" + i * j + "</td>";
+        }
+        sout = sout + "</td>";
+    }
+    sout = sout + "</table>";
+    document.write(sout);
 
+</script>
 </body>
 </html>
