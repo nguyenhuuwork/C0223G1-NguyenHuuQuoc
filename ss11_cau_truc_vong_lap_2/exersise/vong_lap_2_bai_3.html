@@ -5,39 +5,50 @@
     <title>Title</title>
 </head>
 <body>
-<!--<script>-->
-<!--    let box1 = 0;-->
-<!--    let box2 = 1;-->
-<!--    let ketQua = "";-->
-<!--  for (let a = 1; a<=20; a++){-->
-<!--      if(a==1) {-->
-<!--          ketQua = 0;-->
-<!--      }else if(a==2){-->
-<!--          ketQua = 1;-->
-<!--      }else{-->
-<!--          ketQua = box1 + box2;-->
-<!--          box1 =box2;-->
-<!--          box2 =ketQua;-->
-<!--      }-->
-<!--       console.log(ketQua);-->
-<!--  }-->
-<!--</script>-->
-</body>
-</html>
+<p id="h1"></p>
 <script>
-    let box1 = 0;
-    let box2 = 1;
-    let ketQua = "";
-    let c = 0;
-    console.log(c);
-    let d = 1;
-    console.log(d);
-    for (let a = 1; a<=20; a++){
-            ketQua = box1 + box2;
-            box1 =box2;
-            box2 =ketQua;
-        console.log(ketQua);
+    const n = 5;
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= i; j++) {
+            document.write("*");
         }
+        document.write("<br/>");
+    }
+    document.write("<br/>");
+    const a = 1;
+    for (let b = 5; b >= a; b--) {
+        for (let c = 1; c <= b; c++) {
+            document.write("*");
+        }
+        document.write("<br/>");
+    }
 
+
+    let x = ""
+    let i ,j,k;
+    for ( i = 0; i <= 4; i++) {
+        for ( k = 3; k >= i; k--) {
+            x += '&nbsp;&nbsp;';
+        }
+        for ( j = 0; j <= i; j++) {
+            x += "*";
+        }
+        x += '<br/>';
+    }
+    document.write(x);
+
+let f = "";
+    for ( i = 4; i >= 0; i--) {
+        for ( k=3;k>=i;k--){
+            f+='&nbsp;&nbsp;';
+        }
+        for ( j=0;j<=i;j++){
+            f+="*";
+        }
+        f+='<br>'
+    }
+    document.getElementById("h1").innerHTML = f;
 
 </script>
+</body>
+</html>

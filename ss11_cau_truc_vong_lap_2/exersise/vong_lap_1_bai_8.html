@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  <button id="demo"; onclick="choi()">Chơi</button>
+</form>
+<script>
+let a = 0;
+function choi() {
+    let a = prompt('Nhap so ban doan') * 1;
+    let doanAn = Math.round(Math.random() * a);
+    console.log(doanAn);
+    for (a = 1; a <= 3; a++) {
+        let id = prompt('Nhap so ban doan') * 1;
+        if (id > doanAn) {
+            alert("dap an nho hon");
+            // id =prompt("Nhap lai")
+        } else if (id<doanAn) {
+            alert("dap an lon hon");
+            // id=prompt("nhap lai");
+        } else {
+            alert("chuc mung");
+        }
+    }
+    alert("Hen ban lan sau");
+}
+</script>
+</body>
+</html>
