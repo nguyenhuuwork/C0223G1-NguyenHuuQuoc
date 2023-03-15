@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let array  = [];
+for (let i =0; i<10; i++){
+    array[i]=prompt("Nhap day so nguyen 10 phan tu");
+}
+alert(array);
+let a
+for (let b=0; b<array.length-1 ;b++){
+    for (let c=b+1; c<array.length;c++){
+        if (array[b]<array[c]){
+            a=array[b];
+            array[b]=array[c];
+            array[c]=a;
+        }
+    }
+}
+alert(array);
+</script>
+</body>
+</html>

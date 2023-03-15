@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let array = [];
+    // for (let i = 0; i < 10; i++) {
+    //     array[i] = prompt("nhap 10 so nguyen de tao mang") * 1;
+    // }
+    // alert(array);
+    let array = [-3, 6, 8, -5, 9, -4, -6, 2, 1, 5];
+    let aa = true;
+    let nhap = prompt("Nhap so bat ky") * 1;
+    for (let i = 0; i < array.length; i++) {
+        if (nhap == array[i]) {
+            alert('day la so nam trong mang');
+            array.splice([i],1);
+            array.splice(array.length+1,0,0);
+            alert(array);
+            aa = false;
+        }
+    }
+    if (aa) {
+        alert('khong phai nam trong mang');
+    }
+    array.splice(array[i],1);
+    alert(array);
+
+
+</script>
+</body>
+</html>
