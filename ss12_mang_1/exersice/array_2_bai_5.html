@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let flag = true;
+    let arrayA = prompt();
+    let arrayB = prompt();
+    alert(arrayA);
+    alert(arrayB);
+    if (arrayA != arrayB) {
+        alert("2 chuoi khac nhau");
+    } else {
+        for (let i = 0; i < arrayA.length; i++) {
+            if (arrayA[i] == arrayB[i]) {
+                alert("2 chuoi giong nhau");
+                flag=false;
+            }
+        }
+    }
+if(flag=false){
+    alert('khong giong nhau');
+}
+
+</script>
+</body>
+</html>
