@@ -9,18 +9,20 @@
     let array = [-3, -5, -1, 3, 7, 2, 9, 32];
     let max = array[0];
     let index = 0;
-    for (let i =0; i <array.length; i++){
-        if (array[i]>max){
-            max=array[i];
-            index=i;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+            index = i;
         }
-    }document.write('gia tri lon nhat cuar mang'+max+ "<br>");
-    let tong =0;
-    for (let j = 0; j<array.length; j++){
-    tong=tong+array[j];
-}document.write('tong cua cac gia tri trong mang'+tong + "<br>");
-    let trungBinh = tong/array.length;
-    document.write('trung binh cong cua mang'+trungBinh);
+    }
+    document.write('gia tri lon nhat cuar mang' + max + "<br>");
+    let tong = 0;
+    for (let j = 0; j < array.length; j++) {
+        tong = tong + array[j];
+    }
+    document.write('tong cua cac gia tri trong mang' + tong + "<br>");
+    let trungBinh = tong / array.length;
+    document.write('trung binh cong cua mang' + trungBinh);
 </script>
 </body>
 </html>

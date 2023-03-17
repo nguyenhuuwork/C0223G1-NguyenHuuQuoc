@@ -6,30 +6,25 @@
 </head>
 <body>
 <script>
-  myColor = ["Red","Green","White","Black"];
-  console.log(myColor.toString());
-  console.log(myColor.join());
-  console.log(myColor.join('+'));
+    let myColor = ["Red", "Green", "White", "Black"];
+    console.log(myColor.toString());
+    console.log(myColor.join());
+    console.log(myColor.join('+'));
 
 
+    let num = window.prompt();
+    let array = num.toString();
+    let result = [array[0]];
 
-  let num=window.prompt();
-  let array = num.toString();
-  let result = [array[0]];
-
-  for(let x=1; x<array.length; x++)
-  {
-    if((array[x-1]%2 === 0)&&(array[x]%2 === 0))
-    {
-      result.push('-', array[x]);
+    for (let x = 1; x < array.length; x++) {
+        if ((array[x - 1] % 2 === 0) && (array[x] % 2 === 0)) {
+            result.push('-', array[x]);
+        } else {
+            result.push(array[x]);
+        }
     }
-    else
-    {
-      result.push(array[x]);
-    }
-  }
-  console.log(result.join(''));
-  array = 'c';
+    console.log(result.join(''));
+    array = 'c';
 
 
 </script>

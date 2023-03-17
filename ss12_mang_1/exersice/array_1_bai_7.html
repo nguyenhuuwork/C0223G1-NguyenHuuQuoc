@@ -12,21 +12,21 @@
     // }
     // alert(array);
     let array = [-3, 6, 8, -5, 9, -4, -6, 2, 1, 5];
-    let aa = true;
+    let flag = true;
     let nhap = prompt("Nhap so bat ky") * 1;
     for (let i = 0; i < array.length; i++) {
         if (nhap == array[i]) {
             alert('day la so nam trong mang');
-            array.splice([i],1);
-            array.splice(array.length+1,0,0);
+            array.splice([i], 1);
+            array.splice(array.length + 1, 0, 0);
             alert(array);
-            aa = false;
+            flag = false;
         }
     }
-    if (aa) {
+    if (flag) {
         alert('khong phai nam trong mang');
     }
-    array.splice(array[i],1);
+    array.splice(array[i], 1);
     alert(array);
 
 
