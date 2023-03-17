@@ -10,10 +10,11 @@
     for (let i = 0; i < 5; i++) {
         array[i] = prompt("Nhap vao cac ki tu");
     }
-    alert(array);
+    // alert(array);
     for (let j = 0; j < array.length; j++) {
         if (array[j] == "-") {
             array[j] = "_";
+            array[j]=array[j]+ "_";
         }
     }
     alert(array);
