@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+<script>
+    let array = [];
+    for (let i = 0; i < 5; i++) {
+        array[i] = prompt("Nhap vao 5 ki tu bat ki");
+    }
+    alert(array);
+    let a = prompt("nhap ki tu bat ki");
+
+    function kiemTraKiTu(array, a) {
+        let b = array.indexOf(a);
+        if (b == -1) {
+            alert('ki tu a khong nam trong phan tu');
+        } else {
+            alert(array[b]);
+        }
+    }
+
+    kiemTraKiTu(array, a);
+</script>
+</body>
+</html>

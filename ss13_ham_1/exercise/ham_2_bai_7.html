@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+<button onclick="doiCho(a,b)"></button>
+<script>
+    let a = [];
+    let b = [];
+    a[0] = prompt("Nhap so ");
+    b[0] = prompt("Nhap so");
+
+    function doiCho(a, b) {
+        let flag = a[0];
+        a[0] = b[0];
+        b[0] = flag;
+    }
+
+    doiCho(a, b);
+    alert(a);
+    alert(b);
+
+</script>
+</body>
+</html>

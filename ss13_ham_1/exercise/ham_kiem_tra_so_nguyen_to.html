@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTra(nhapSo) {
+        let flag = true;
+        if (nhapSo < 2) {
+            flag = false;
+        } else {
+            for (let i = 2; i < nhapSo - 1; i++) {
+                if (nhapSo % i == 0) {
+                    flag = false;
+                    break;
+                }
+            }
+        }
+        if (flag == true) {
+            alert("day la so nguyen to");
+        } else {
+            alert("day k phai so nguyen to");
+        }
+    }
+
+    let nhapSo = prompt("nhap so de kiem tra");
+    kiemTra(nhapSo);
+
+</script>
+</body>
+</html>
