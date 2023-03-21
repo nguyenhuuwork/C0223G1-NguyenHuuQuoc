@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(nhietDoC) {
+            this.nhietDoC = nhietDoC;
+        }
+
+        nhietDoF() {
+            let doF = this.nhietDoC * 1.8 + 32;
+            return doF;
+        }
+
+        nhietDoK() {
+            let doK = this.nhietDoC + 273.15;
+            return doK;
+        }
+    }
+
+    let temperature1 = new Temperature(25);
+    alert(temperature1.nhietDoF());
+    alert(temperature1.nhietDoK());
+</script>
+</body>
+</html>

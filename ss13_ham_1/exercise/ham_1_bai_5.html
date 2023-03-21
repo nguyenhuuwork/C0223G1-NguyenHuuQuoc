@@ -5,21 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="demo"><button onclick="nhapVao()"> klm</button>
+<input type="text" id="demo">
+<button onclick="nhapVao()"> klm</button>
 <script>
     let starA = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
-    let starB = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Leo'];
+    let starB = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
 
-    function nhapVao(){
-    let a =document.getElementById('demo').value;
-     let b = starA.indexOf(a);
-        if (b== -1){
+    let a = document.getElementById('demo').value;
+
+    function nhapVao(a) {
+        let b = starA.indexOf(a);
+        if (b == -1) {
             alert("khong co du lieu");
-        }else {
-            alert(starB[b])
+        } else {
+            alert(starB[b]);
         }
     }
-
 </script>
 </body>
 </html>
