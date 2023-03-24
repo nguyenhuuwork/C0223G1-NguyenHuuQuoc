@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let nhapLuong = prompt("Nhap luong cua nhan vien don vi trieu dong") * 1;
+    let luongRong;
+    if (nhapLuong > 15) {
+        luongRong = nhapLuong * 0.8;
+        alert("Luong rong cua nhan vien nhan duoc la " + luongRong +"trieu");
+    } else if (7 <= nhapLuong <= 15) {
+        luongRong = nhapLuong * 0.9;
+        alert("Luong rong cua nhan vien nhan duoc la " + luongRong + "trieu");
+    } else {
+        luongRong = nhapLuong * 0.95;
+        alert("Luong rong cua nhan vien nhan duoc la " + luongRong + "trieu");
+    }
+</script>
+</body>
+</html>
