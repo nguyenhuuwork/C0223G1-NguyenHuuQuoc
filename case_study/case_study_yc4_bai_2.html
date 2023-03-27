@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Bài 2: Cho xâu kí tự. Hãy đếm số lượng ký tự khác nhau trong xâu đó
+Ví dụ: s = "cabca", thì kết quả differentSymbolsNaive(s) = 3.
+⇨ Có 3 ký tự khác nhau là a, b và c.
+<script>
+    let arrayA = "cabca";
+    let arrayB = "";
+    let count = 0;
+    for (let i = 0; i < arrayA.length; i++) {
+        if (arrayA.indexOf(arrayA[i]) == i) {
+            arrayB += arrayA[i];
+            count++;
+        }
+    }
+    alert(arrayB);
+    alert(count);
+    
+</script>
+</body>
+</html>

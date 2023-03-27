@@ -10,25 +10,53 @@ xuất hiện trong mảng B nhưng lại không xuất hiện A
 Chú ý các phần tử giống nhau chỉ tính là 1 lần xuất hiện
 Ví dụ: A=[7,2,5,3,5,3] và B=[7,2,5,4,6,3,5,3] thì kết quả missingValue(A, B) = [4, 6]
 <script>
-    let arrayA = [];
-    for (let a = 0; a < 6; a++) {
-        arrayA[a] = prompt("Nhap cac so lam phan tu mang arrayA") * 1;
-    }
-    let arrayB = [];
-    for (let b = 0; b < 8; b++) {
-        arrayB[b] = prompt("Nhap cac so lam phan tu mang arrayB") * 1;
-    }
-    // let arrayA = [7, 2, 5, 3, 5, 3];
-    // let arrayB = [7, 2, 5, 4, 6, 3, 5, 3];
+    // let arrayA = [];
+    // for (let a = 0; a < 6; a++) {
+    //     arrayA[a] = prompt("Nhap cac so lam phan tu mang arrayA") * 1;
+    // }
+    // let arrayB = [];
+    // for (let b = 0; b < 8; b++) {
+    //     arrayB[b] = prompt("Nhap cac so lam phan tu mang arrayB") * 1;
+    // }
+    let arrayA = [7, 2, 5, 3, 5, 3, 5, 7, 11, 12];
+    let arrayB = [7, 2, 5, 4,4,6, 6, 3, 8, 9];
     let arrayC = [];
-    for (let i = 0; i < arrayB.length; i++) {
-        if (arrayB[i] != arrayA[i]) {
-            for (let j = 0; j < arrayA[j]; j++) {
-                if (arrayA.indexOf(arrayB[i]) == -1) {
-                    arrayC.push(arrayB[i]);
-                    break;
+    // for (let i = 0; i < arrayB.length; i++) {
+    //     if (arrayB[i] != arrayA[i]) {
+    //         for (let j = 0; j < arrayA[j]; j++) {
+    //             if (arrayA.indexOf(arrayB[i]) == -1) {
+    //                 arrayC.push(arrayB[i]);
+    //                 break;
+    //             }
+    //         }
+    //     }
+    // }
+
+    // for (let i = 0; i <arrayB.length ; i++) {
+    //     if(arrayA.indexOf(arrayB[i])==-1&&arrayC.indexOf(arrayB[i])==-1){
+    //         arrayC.push(arrayB[i]);
+    //     }
+    // }
+    for (let i = 0; i <arrayB.length ; i++) {
+        let flag =true; // mac dinh khong co trong A
+        for (let j = 0; j <arrayA.length ; j++) {
+            if(arrayB[i]==arrayA[j]){
+                flag =false;
+                break;
+            }
+        }
+        if (flag==true){
+            let flag2 = true;
+            for (let j = 0; j <arrayC.length ; j++) {
+                if (arrayB[i]==arrayC[j]){
+                    flag2 =false;
+                    break
                 }
             }
+            if(flag2==true){
+                arrayC.push(arrayB[i]);
+            }
+
         }
     }
     alert(arrayC);
