@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function checkString(string) {
+        let count1 = 0;
+        let count2 = 0;
+        for (let i = 0; i < string.length; i++) {
+            if (string[i] >= "a" && string[i] <= "z") {
+                count1++;
+            } else if (string[i] >= "A" && string[i] <= "Z") {
+                count2++;
+            }
+        }
+        if (count1 == count2) {
+            alert("True");
+        } else {
+            alert("False");
+        }
+    }
+
+    let a = prompt("Nhap chuoi can kiem tra");
+    checkString(a);
+    // let string = prompt("Nhap chuoi bat ki de kiem tra");
+    // let count1 = 0;
+    // let count2 = 0;
+    // for (let i = 0; i < string.length; i++) {
+    //     if (string[i] >= "a" && string[i] <= "z") {
+    //         count1++;
+    //     } else if (string[i] >= "A" && string[i] <= "Z") {
+    //         count2++;
+    //     }
+    // }
+    // if (count1 == count2) {
+    //     alert("True");
+    // } else {
+    //     alert("False");
+    // }
+
+</script>
+</body>
+</html>

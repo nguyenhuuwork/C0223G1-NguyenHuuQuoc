@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let n = prompt("Nhap do dai cua mang") * 1;
+    // let arrayA = [];
+    // for (let a = 0; a < n; a++) {
+    //     arrayA[a] = prompt("Nhap cac phan tu cua mang de kiem tra") * 1;
+    // }
+    // alert(arrayA);
+    let arrayA = [1, 5, 6, 8, 10, 3, 7];
+    let a = arrayA[0];
+    for (let j = 0; j < arrayA.length; j++) {
+        for (let k = 0; k < j; k++) {
+            if (arrayA[j] > arrayA[j + 1]) {
+                a = arrayA[j];
+                arrayA[j] = arrayA[j + 1];
+                arrayA[j + 1] = a;
+            }
+        }
+    }
+    alert(arrayA);
+
+    // let flag = true;
+    // let arrayA = [1, 2, 2, 4, 5, 6];
+    // for (let i = 0; i < arrayA.length; i++) {
+    //     if (arrayA[i] == arrayA[i + 1]) {
+    //         flag = false;
+    //     }
+    // }
+    // if (flag) {
+    //     alert("Ham thoa dieu kien");
+    // } else {
+    //     alert("Ham khong thoa dieu kien");
+    // }
+
+</script>
+</body>
+</html>

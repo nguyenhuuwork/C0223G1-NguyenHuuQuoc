@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function checkString(){
+    //
+    // }
+    string = "aBCbcA";
+    let count1 = 0;
+    let count2 = 0;
+    // let string1 = "";
+    // let string2 = "";
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] >= "a" && string[i] <= "z") {
+            // string1 += string[i];
+            count1++;
+        } else if (string[i] >= "A" && string[i] <= "Z") {
+            // string2 += string[i];
+            count2++;
+        }
+    }
+    alert(count1);
+    alert(count2);
+    if (count1 == count2) {
+        alert("True");
+    } else {
+        alert("False");
+    }
+    // alert(string1);
+    // alert(string2);
+
+</script>
+</body>
+</html>

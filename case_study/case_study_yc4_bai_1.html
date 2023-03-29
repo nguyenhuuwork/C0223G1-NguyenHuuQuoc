@@ -24,16 +24,16 @@ in ra xâu trước và sau khi chuẩn hóa, 1 từ dài nhất trong xâu đó
     }
     console.log(string1.length);
     console.log(string2);
-    let chuoiTen = string2.toLowerCase();
-    console.log(chuoiTen);
-    for (let j = 0; j < chuoiTen.length; j++) {
-        if (j === 0 || (chuoiTen.charCodeAt(j) <= 122 && chuoiTen.charCodeAt(j) >= 97 && chuoiTen.charCodeAt(j - 1) === 32)) {
-            string3 += chuoiTen[j].toUpperCase();
-        } else {
-            string3 += chuoiTen[j];
+        let chuoiTen = string2.toLowerCase();
+        console.log(chuoiTen);
+        for (let j = 0; j < chuoiTen.length; j++) {
+            if (j === 0 || (chuoiTen.charCodeAt(j) <= 122 && chuoiTen.charCodeAt(j) >= 97 && chuoiTen.charCodeAt(j - 1) === 32)) {
+                string3 += chuoiTen[j].toUpperCase();
+            } else {
+                string3 += chuoiTen[j];
+            }
         }
-    }
-    console.log(string3);
+        console.log(string3);
 </script>
 </body>
 </html>

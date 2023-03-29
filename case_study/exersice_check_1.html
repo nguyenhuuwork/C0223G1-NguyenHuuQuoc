@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt("Nhap so dai cua mang") * 1;
+    let arrayA = [];
+    if (n <= 50) {
+        for (let a = 0; a < n; a++) {
+            arrayA[a] = prompt("Nhap cac phan tu so nguyen") * 1;
+        }
+    }
+    alert(arrayA);
+
+    // let arrayA = [15, 2, 3, 5, 10, 15, 7, 8, 9, 10];
+    let sum = 0;
+    let count = 0;
+    let giaTriTB = 0;
+    for (let i = 0; i < arrayA.length; i++) {
+        if (arrayA[i] % 5 == 0 && i % 3 == 0) {
+            sum = sum + arrayA[i];
+            count++;
+        }
+    }
+    giaTriTB = sum / count;
+    alert(sum);
+    alert(count);
+    alert("Gia tri trung binh la " + giaTriTB);
+</script>
+</body>
+</html>

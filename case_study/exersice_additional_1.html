@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let n = prompt("Nhap do dai mamg") * 1;
+    // let arrayA = [];
+    // for (let a = 0; a < n; a++) {
+    //     arrayA[a] = prompt("Nhap cac phan tu vao mang") * 1;
+    // }
+    // alert(arrayA);
+
+    let arrayA = [1, 21, 3, 4, 5, 6];
+    let sum = 0;
+
+    for (let i = 0; i < arrayA.length; i++) {
+        if (arrayA[i] % 2 == 0 && i % 2 != 0) {
+            sum = sum + arrayA[i];
+        }
+    }
+    alert(sum);
+</script>
+</body>
+</html>

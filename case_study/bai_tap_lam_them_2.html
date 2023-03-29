@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkArray(arrayA) {
+        let a = arrayA.length;
+        let flag = true;
+        for (let i = 0; i < a / 2; i++) {
+            if (arrayA[i] * arrayA[i] != arrayA[(a / 2) + i]) {
+                flag = false;
+                break;
+            }
+        }
+        if (flag == true) {
+            alert("True");
+        } else {
+            alert("False");
+        }
+    }
+
+    let b = prompt("Nhap 6 phan tu de kiem tra");
+    checkArray(b);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayA = [];
+    let arrayB = [];
+    let arrayC = [];
+    for (let a = 0; a < 6; a++) {
+        arrayA[a] = prompt("Nhap 6 phan tu de kiem tra");
+    }
+    // // arrayA = [1, 2, 5, 8, 9, 3, 10, 12];
+    // arrayA=[5,7,12,20,24,26,17,81,16];
+    for (let i = 0; i < arrayA.length; i++) {
+        if (arrayA[i] % 2 == 0) {
+            arrayB.push(arrayA[i]);
+        } else {
+            arrayC.push(arrayA[i]);
+        }
+    }
+    if (arrayB.length == arrayC.length) {
+        alert("OK");
+    } else {
+        alert("NO")
+    }
+</script>
+</body>
+</html>
